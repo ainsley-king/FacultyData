@@ -1,0 +1,30 @@
+body{
+    background-color:steelblue;
+    font-family: Century;
+    color: white
+    
+}
+
+table{
+    border: 3px dashed white;
+    font-size: 25;
+}
+
+td {
+    width: 300px;
+    height: 100px;
+}
+
+td:hover {
+    background-color: firebrick;
+}
+
+li:hover {
+    background-color: firebrick;
+}
+
+.logo {
+    background-image: url(centrelogo.jpeg);
+    background-repeat: no-repeat;
+    background-position:top right
+}

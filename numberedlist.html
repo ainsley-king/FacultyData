@@ -1,0 +1,29 @@
+<html>
+<head>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="faculty.js"></script>
+    <link href="Style.css" type="text/css" rel="stylesheet" />
+    
+    </head>
+<body class="logo">
+  <p><a href="index.html">Home Page</a></p>
+    <ol></ol>
+   
+   <script>
+    d3.select("ol")
+       .selectAll("li")
+       .data(employees)
+       .enter()
+       .append("li")
+       .text(function(employee)
+            {
+        return employee.lastName
+    })
+    
+       
+    
+    
+    
+    </script> 
+    </body>
+</html>

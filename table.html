@@ -1,0 +1,29 @@
+<html>
+<head>
+   <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="faculty.js"></script> 
+    <link href="Style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <p><a href="index.html">Home Page</a></p>
+        <table id="facultytable"></table>
+    <script>
+        
+        
+        var rows = d3.select("#facultytable")
+                    .selectAll("tr")
+                    .data(employees)
+                    .enter()
+                .append("tr")
+            rows.append("td")
+                .text(function(employee){return employee.firstName})
+            rows.append("td")
+                .text(function(employee){return employee.lastName})
+            rows.append("td")
+                .append("img")
+                .attr("src", function(employee){return employee.photo})
+        
+        
+        </script>
+    </body>
+</html>
